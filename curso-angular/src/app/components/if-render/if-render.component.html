@@ -1,0 +1,11 @@
+<div class="lesson">
+ <div *ngIf="willShow">
+   Texto a ser mostrado
+ </div>
+  <div>
+    <p *ngIf="name == 'fulano' ; else nameNotFound">O nome é FULANO</p>
+    <ng-template #nameNotFound>
+      <p>nome não encontrado</p>
+    </ng-template>
+  </div>
+</div>
